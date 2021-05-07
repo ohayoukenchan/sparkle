@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D38CD5D263F48DF00C4544D /* sparkleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38CD5C263F48DF00C4544D /* sparkleApp.swift */; };
+		0D38CD5F263F48DF00C4544D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38CD5E263F48DF00C4544D /* ContentView.swift */; };
+		0D38CD61263F48E000C4544D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D38CD60263F48E000C4544D /* Assets.xcassets */; };
+		0D38CD64263F48E000C4544D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D38CD63263F48E000C4544D /* Preview Assets.xcassets */; };
+		0D38CD6F263F48E100C4544D /* sparkleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38CD6E263F48E100C4544D /* sparkleTests.swift */; };
+		0D38CD7A263F48E100C4544D /* sparkleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38CD79263F48E100C4544D /* sparkleUITests.swift */; };
+		0D38CD8A263F4E9800C4544D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D38CD89263F4E9800C4544D /* GoogleService-Info.plist */; };
+		0D38CD8E2643748D00C4544D /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D38CD8D2643748D00C4544D /* images.xcassets */; };
+		0D38CD912643756C00C4544D /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38CD902643756C00C4544D /* Logo.swift */; };
+		0D4C177A264518CA00789E75 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C1779264518CA00789E75 /* FirebaseModel.swift */; };
+		0D4C177D264519D400789E75 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C177C264519D400789E75 /* Result+.swift */; };
+		0D4C178026451A7300789E75 /* DocumentSnapshot+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C177F26451A7300789E75 /* DocumentSnapshot+.swift */; };
+		54B403B2D98F4B07F878BBBC /* Pods_sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25726C1243C7FD9206993439 /* Pods_sparkle.framework */; };
+		7FF02A48DBD193BAD49EF9F3 /* Pods_sparkleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66334B0F6CA253CA6842DE4 /* Pods_sparkleTests.framework */; };
+		8CE117CF1C968175F3556884 /* Pods_sparkle_sparkleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A178560832BACBA32B676C /* Pods_sparkle_sparkleUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D38CD6B263F48E100C4544D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D38CD51263F48DF00C4544D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D38CD58263F48DF00C4544D;
+			remoteInfo = sparkle;
+		};
+		0D38CD76263F48E100C4544D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D38CD51263F48DF00C4544D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D38CD58263F48DF00C4544D;
+			remoteInfo = sparkle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D38CD59263F48DF00C4544D /* sparkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D38CD5C263F48DF00C4544D /* sparkleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkleApp.swift; sourceTree = "<group>"; };
+		0D38CD5E263F48DF00C4544D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D38CD60263F48E000C4544D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D38CD63263F48E000C4544D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D38CD65263F48E000C4544D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D38CD6A263F48E100C4544D /* sparkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sparkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D38CD6E263F48E100C4544D /* sparkleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkleTests.swift; sourceTree = "<group>"; };
+		0D38CD70263F48E100C4544D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D38CD75263F48E100C4544D /* sparkleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sparkleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D38CD79263F48E100C4544D /* sparkleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkleUITests.swift; sourceTree = "<group>"; };
+		0D38CD7B263F48E100C4544D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D38CD89263F4E9800C4544D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0D38CD8D2643748D00C4544D /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		0D38CD902643756C00C4544D /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		0D4C1779264518CA00789E75 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		0D4C177C264519D400789E75 /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
+		0D4C177F26451A7300789E75 /* DocumentSnapshot+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentSnapshot+.swift"; sourceTree = "<group>"; };
+		25726C1243C7FD9206993439 /* Pods_sparkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B86CBCB4CA96BF48E2ECEBB /* Pods-sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.release.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.release.xcconfig"; sourceTree = "<group>"; };
+		67A178560832BACBA32B676C /* Pods_sparkle_sparkleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkle_sparkleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F615CFFE21406704B96A245 /* Pods-sparkle-sparkleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle-sparkleUITests.debug.xcconfig"; path = "Target Support Files/Pods-sparkle-sparkleUITests/Pods-sparkle-sparkleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75BAD176F3D0EFDA4EFFC341 /* Pods-sparkleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.debug.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AE7A6804DFD8927EBF81864 /* Pods-sparkle-sparkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle-sparkleUITests.release.xcconfig"; path = "Target Support Files/Pods-sparkle-sparkleUITests/Pods-sparkle-sparkleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9EA10075BA86F756641B9EE4 /* Pods-sparkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkleTests.release.xcconfig"; path = "Target Support Files/Pods-sparkleTests/Pods-sparkleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A37A25E117EA8CD62832271E /* Pods-sparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.debug.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.debug.xcconfig"; sourceTree = "<group>"; };
+		D66334B0F6CA253CA6842DE4 /* Pods_sparkleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D38CD56263F48DF00C4544D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B403B2D98F4B07F878BBBC /* Pods_sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D38CD67263F48E100C4544D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF02A48DBD193BAD49EF9F3 /* Pods_sparkleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D38CD72263F48E100C4544D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE117CF1C968175F3556884 /* Pods_sparkle_sparkleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D38CD50263F48DF00C4544D = {
+			isa = PBXGroup;
+			children = (
+				0D38CD5B263F48DF00C4544D /* sparkle */,
+				0D38CD6D263F48E100C4544D /* sparkleTests */,
+				0D38CD78263F48E100C4544D /* sparkleUITests */,
+				0D38CD5A263F48DF00C4544D /* Products */,
+				B624410177DE915F573C8D8D /* Pods */,
+				4C329B3DBEE5DD2C12D95690 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D38CD5A263F48DF00C4544D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD59263F48DF00C4544D /* sparkle.app */,
+				0D38CD6A263F48E100C4544D /* sparkleTests.xctest */,
+				0D38CD75263F48E100C4544D /* sparkleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D38CD5B263F48DF00C4544D /* sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C17772645180000789E75 /* Sources */,
+				0D38CD8B2643745B00C4544D /* Resources */,
+				0D38CD87263F4E6400C4544D /* Supporting Files */,
+				0D38CD60263F48E000C4544D /* Assets.xcassets */,
+				0D38CD65263F48E000C4544D /* Info.plist */,
+				0D38CD62263F48E000C4544D /* Preview Content */,
+			);
+			path = sparkle;
+			sourceTree = "<group>";
+		};
+		0D38CD62263F48E000C4544D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD63263F48E000C4544D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D38CD6D263F48E100C4544D /* sparkleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD6E263F48E100C4544D /* sparkleTests.swift */,
+				0D38CD70263F48E100C4544D /* Info.plist */,
+			);
+			path = sparkleTests;
+			sourceTree = "<group>";
+		};
+		0D38CD78263F48E100C4544D /* sparkleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD79263F48E100C4544D /* sparkleUITests.swift */,
+				0D38CD7B263F48E100C4544D /* Info.plist */,
+			);
+			path = sparkleUITests;
+			sourceTree = "<group>";
+		};
+		0D38CD87263F4E6400C4544D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD88263F4E6A00C4544D /* GoogleService */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D38CD88263F4E6A00C4544D /* GoogleService */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD89263F4E9800C4544D /* GoogleService-Info.plist */,
+			);
+			path = GoogleService;
+			sourceTree = "<group>";
+		};
+		0D38CD8B2643745B00C4544D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD8C2643747600C4544D /* AssetsCatalog */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D38CD8C2643747600C4544D /* AssetsCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD8D2643748D00C4544D /* images.xcassets */,
+			);
+			path = AssetsCatalog;
+			sourceTree = "<group>";
+		};
+		0D38CD8F2643754F00C4544D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD902643756C00C4544D /* Logo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0D4C17772645180000789E75 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D38CD5C263F48DF00C4544D /* sparkleApp.swift */,
+				0D38CD5E263F48DF00C4544D /* ContentView.swift */,
+				0D4C177E26451A5D00789E75 /* Extention */,
+				0D4C177B264519BE00789E75 /* Shared */,
+				0D4C17782645189F00789E75 /* Models */,
+				0D38CD8F2643754F00C4544D /* Components */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0D4C17782645189F00789E75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C1779264518CA00789E75 /* FirebaseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D4C177B264519BE00789E75 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0D4C177E26451A5D00789E75 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C177F26451A7300789E75 /* DocumentSnapshot+.swift */,
+				0D4C177C264519D400789E75 /* Result+.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		4C329B3DBEE5DD2C12D95690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25726C1243C7FD9206993439 /* Pods_sparkle.framework */,
+				67A178560832BACBA32B676C /* Pods_sparkle_sparkleUITests.framework */,
+				D66334B0F6CA253CA6842DE4 /* Pods_sparkleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B624410177DE915F573C8D8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A37A25E117EA8CD62832271E /* Pods-sparkle.debug.xcconfig */,
+				4B86CBCB4CA96BF48E2ECEBB /* Pods-sparkle.release.xcconfig */,
+				6F615CFFE21406704B96A245 /* Pods-sparkle-sparkleUITests.debug.xcconfig */,
+				9AE7A6804DFD8927EBF81864 /* Pods-sparkle-sparkleUITests.release.xcconfig */,
+				75BAD176F3D0EFDA4EFFC341 /* Pods-sparkleTests.debug.xcconfig */,
+				9EA10075BA86F756641B9EE4 /* Pods-sparkleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D38CD58263F48DF00C4544D /* sparkle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D38CD7E263F48E100C4544D /* Build configuration list for PBXNativeTarget "sparkle" */;
+			buildPhases = (
+				1CA5A9BC24E03308A5588687 /* [CP] Check Pods Manifest.lock */,
+				0D38CD55263F48DF00C4544D /* Sources */,
+				0D38CD56263F48DF00C4544D /* Frameworks */,
+				0D38CD57263F48DF00C4544D /* Resources */,
+				89AC68D0EBF16E18597BEF00 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sparkle;
+			productName = sparkle;
+			productReference = 0D38CD59263F48DF00C4544D /* sparkle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D38CD69263F48E100C4544D /* sparkleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D38CD81263F48E100C4544D /* Build configuration list for PBXNativeTarget "sparkleTests" */;
+			buildPhases = (
+				99DB0968CB3DD7B071201995 /* [CP] Check Pods Manifest.lock */,
+				0D38CD66263F48E100C4544D /* Sources */,
+				0D38CD67263F48E100C4544D /* Frameworks */,
+				0D38CD68263F48E100C4544D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D38CD6C263F48E100C4544D /* PBXTargetDependency */,
+			);
+			name = sparkleTests;
+			productName = sparkleTests;
+			productReference = 0D38CD6A263F48E100C4544D /* sparkleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D38CD74263F48E100C4544D /* sparkleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D38CD84263F48E100C4544D /* Build configuration list for PBXNativeTarget "sparkleUITests" */;
+			buildPhases = (
+				0DEF82405015A8146B04527A /* [CP] Check Pods Manifest.lock */,
+				0D38CD71263F48E100C4544D /* Sources */,
+				0D38CD72263F48E100C4544D /* Frameworks */,
+				0D38CD73263F48E100C4544D /* Resources */,
+				D34897F0EAD1042DF19B6680 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D38CD77263F48E100C4544D /* PBXTargetDependency */,
+			);
+			name = sparkleUITests;
+			productName = sparkleUITests;
+			productReference = 0D38CD75263F48E100C4544D /* sparkleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D38CD51263F48DF00C4544D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					0D38CD58263F48DF00C4544D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					0D38CD69263F48E100C4544D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 0D38CD58263F48DF00C4544D;
+					};
+					0D38CD74263F48E100C4544D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 0D38CD58263F48DF00C4544D;
+					};
+				};
+			};
+			buildConfigurationList = 0D38CD54263F48DF00C4544D /* Build configuration list for PBXProject "sparkle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D38CD50263F48DF00C4544D;
+			productRefGroup = 0D38CD5A263F48DF00C4544D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D38CD58263F48DF00C4544D /* sparkle */,
+				0D38CD69263F48E100C4544D /* sparkleTests */,
+				0D38CD74263F48E100C4544D /* sparkleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D38CD57263F48DF00C4544D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D38CD64263F48E000C4544D /* Preview Assets.xcassets in Resources */,
+				0D38CD8E2643748D00C4544D /* images.xcassets in Resources */,
+				0D38CD61263F48E000C4544D /* Assets.xcassets in Resources */,
+				0D38CD8A263F4E9800C4544D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D38CD68263F48E100C4544D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D38CD73263F48E100C4544D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DEF82405015A8146B04527A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparkle-sparkleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CA5A9BC24E03308A5588687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparkle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89AC68D0EBF16E18597BEF00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle/Pods-sparkle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DB0968CB3DD7B071201995 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparkleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D34897F0EAD1042DF19B6680 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparkle-sparkleUITests/Pods-sparkle-sparkleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparkle-sparkleUITests/Pods-sparkle-sparkleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparkle-sparkleUITests/Pods-sparkle-sparkleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D38CD55263F48DF00C4544D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4C177A264518CA00789E75 /* FirebaseModel.swift in Sources */,
+				0D38CD5F263F48DF00C4544D /* ContentView.swift in Sources */,
+				0D38CD912643756C00C4544D /* Logo.swift in Sources */,
+				0D38CD5D263F48DF00C4544D /* sparkleApp.swift in Sources */,
+				0D4C178026451A7300789E75 /* DocumentSnapshot+.swift in Sources */,
+				0D4C177D264519D400789E75 /* Result+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D38CD66263F48E100C4544D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D38CD6F263F48E100C4544D /* sparkleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D38CD71263F48E100C4544D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D38CD7A263F48E100C4544D /* sparkleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D38CD6C263F48E100C4544D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D38CD58263F48DF00C4544D /* sparkle */;
+			targetProxy = 0D38CD6B263F48E100C4544D /* PBXContainerItemProxy */;
+		};
+		0D38CD77263F48E100C4544D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D38CD58263F48DF00C4544D /* sparkle */;
+			targetProxy = 0D38CD76263F48E100C4544D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D38CD7C263F48E100C4544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D38CD7D263F48E100C4544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D38CD7F263F48E100C4544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37A25E117EA8CD62832271E /* Pods-sparkle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"sparkle/Preview Content\"";
+				DEVELOPMENT_TEAM = L248HZDU6R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sparkle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamamashoten.sparkle.sparkle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D38CD80263F48E100C4544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B86CBCB4CA96BF48E2ECEBB /* Pods-sparkle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"sparkle/Preview Content\"";
+				DEVELOPMENT_TEAM = L248HZDU6R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sparkle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamamashoten.sparkle.sparkle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D38CD82263F48E100C4544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75BAD176F3D0EFDA4EFFC341 /* Pods-sparkleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L248HZDU6R;
+				INFOPLIST_FILE = sparkleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamamashoten.sparkle.sparkleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
+			};
+			name = Debug;
+		};
+		0D38CD83263F48E100C4544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA10075BA86F756641B9EE4 /* Pods-sparkleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L248HZDU6R;
+				INFOPLIST_FILE = sparkleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamamashoten.sparkle.sparkleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparkle.app/sparkle";
+			};
+			name = Release;
+		};
+		0D38CD85263F48E100C4544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F615CFFE21406704B96A245 /* Pods-sparkle-sparkleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L248HZDU6R;
+				INFOPLIST_FILE = sparkleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamamashoten.sparkle.sparkleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sparkle;
+			};
+			name = Debug;
+		};
+		0D38CD86263F48E100C4544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE7A6804DFD8927EBF81864 /* Pods-sparkle-sparkleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L248HZDU6R;
+				INFOPLIST_FILE = sparkleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamamashoten.sparkle.sparkleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sparkle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D38CD54263F48DF00C4544D /* Build configuration list for PBXProject "sparkle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D38CD7C263F48E100C4544D /* Debug */,
+				0D38CD7D263F48E100C4544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D38CD7E263F48E100C4544D /* Build configuration list for PBXNativeTarget "sparkle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D38CD7F263F48E100C4544D /* Debug */,
+				0D38CD80263F48E100C4544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D38CD81263F48E100C4544D /* Build configuration list for PBXNativeTarget "sparkleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D38CD82263F48E100C4544D /* Debug */,
+				0D38CD83263F48E100C4544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D38CD84263F48E100C4544D /* Build configuration list for PBXNativeTarget "sparkleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D38CD85263F48E100C4544D /* Debug */,
+				0D38CD86263F48E100C4544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D38CD51263F48DF00C4544D /* Project object */;
+}
