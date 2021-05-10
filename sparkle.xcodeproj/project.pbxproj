@@ -19,6 +19,10 @@
 		0D4C177A264518CA00789E75 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C1779264518CA00789E75 /* FirebaseModel.swift */; };
 		0D4C177D264519D400789E75 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C177C264519D400789E75 /* Result+.swift */; };
 		0D4C178026451A7300789E75 /* DocumentSnapshot+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C177F26451A7300789E75 /* DocumentSnapshot+.swift */; };
+		0D4C17822645851B00789E75 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C17812645851B00789E75 /* Product.swift */; };
+		0D4C178526458BDC00789E75 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C178426458BDC00789E75 /* ProductsViewModel.swift */; };
+		0D4C17872645950700789E75 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C17862645950700789E75 /* ProductView.swift */; };
+		0D4C17892645959200789E75 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C17882645959200789E75 /* ProductViewModel.swift */; };
 		54B403B2D98F4B07F878BBBC /* Pods_sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25726C1243C7FD9206993439 /* Pods_sparkle.framework */; };
 		7FF02A48DBD193BAD49EF9F3 /* Pods_sparkleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66334B0F6CA253CA6842DE4 /* Pods_sparkleTests.framework */; };
 		8CE117CF1C968175F3556884 /* Pods_sparkle_sparkleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A178560832BACBA32B676C /* Pods_sparkle_sparkleUITests.framework */; };
@@ -60,6 +64,10 @@
 		0D4C1779264518CA00789E75 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		0D4C177C264519D400789E75 /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
 		0D4C177F26451A7300789E75 /* DocumentSnapshot+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentSnapshot+.swift"; sourceTree = "<group>"; };
+		0D4C17812645851B00789E75 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0D4C178426458BDC00789E75 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		0D4C17862645950700789E75 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		0D4C17882645959200789E75 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		25726C1243C7FD9206993439 /* Pods_sparkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B86CBCB4CA96BF48E2ECEBB /* Pods-sparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkle.release.xcconfig"; path = "Target Support Files/Pods-sparkle/Pods-sparkle.release.xcconfig"; sourceTree = "<group>"; };
 		67A178560832BACBA32B676C /* Pods_sparkle_sparkleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkle_sparkleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,21 +212,24 @@
 			isa = PBXGroup;
 			children = (
 				0D38CD5C263F48DF00C4544D /* sparkleApp.swift */,
+				0D4C178326458BB700789E75 /* ViewModel */,
 				0D38CD5E263F48DF00C4544D /* ContentView.swift */,
+				0D4C17862645950700789E75 /* ProductView.swift */,
 				0D4C177E26451A5D00789E75 /* Extention */,
 				0D4C177B264519BE00789E75 /* Shared */,
-				0D4C17782645189F00789E75 /* Models */,
+				0D4C17782645189F00789E75 /* Model */,
 				0D38CD8F2643754F00C4544D /* Components */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		0D4C17782645189F00789E75 /* Models */ = {
+		0D4C17782645189F00789E75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0D4C1779264518CA00789E75 /* FirebaseModel.swift */,
+				0D4C17812645851B00789E75 /* Product.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0D4C177B264519BE00789E75 /* Shared */ = {
@@ -235,6 +246,15 @@
 				0D4C177C264519D400789E75 /* Result+.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		0D4C178326458BB700789E75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C178426458BDC00789E75 /* ProductsViewModel.swift */,
+				0D4C17882645959200789E75 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4C329B3DBEE5DD2C12D95690 /* Frameworks */ = {
@@ -500,11 +520,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4C177A264518CA00789E75 /* FirebaseModel.swift in Sources */,
+				0D4C17872645950700789E75 /* ProductView.swift in Sources */,
 				0D38CD5F263F48DF00C4544D /* ContentView.swift in Sources */,
+				0D4C178526458BDC00789E75 /* ProductsViewModel.swift in Sources */,
+				0D4C17892645959200789E75 /* ProductViewModel.swift in Sources */,
 				0D38CD912643756C00C4544D /* Logo.swift in Sources */,
 				0D38CD5D263F48DF00C4544D /* sparkleApp.swift in Sources */,
 				0D4C178026451A7300789E75 /* DocumentSnapshot+.swift in Sources */,
 				0D4C177D264519D400789E75 /* Result+.swift in Sources */,
+				0D4C17822645851B00789E75 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
